@@ -13,6 +13,7 @@ def scrape_linkedin_profile(linkedin_profile_url: str):
     )
 
     data = response.json()
+    # clean the unnessecary empty fields, so we don't exceed the tokens
     data = {
         k: v
         for k, v in data.items()

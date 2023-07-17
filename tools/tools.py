@@ -36,7 +36,7 @@ class CustomSerpAPIWrapper(SerpAPIWrapper):
         else:
             toret = "No good search result found"
 
-
+# the following function looks profile urls (linkedin, twitter,...), any profile that is asked in the text arguement
 def get_profile_url(text: str) -> str:
     """Searches for Linkedin or twitter Profile Page"""
     # search = CustomSerpAPIWrapper()
